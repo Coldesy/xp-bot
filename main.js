@@ -36,13 +36,8 @@ client.on('guildMemberRemove', async (member)=> {
 // When the client is ready, run this code (only once)
 client.once('ready', async () => {
 	console.log('ready');
-    const guild = await client.guilds.fetch('752105258481877073')
-    const members = await guild.members.fetch()
-    let memArr = Array.from(members.keys())
-    memArr.forEach(async member => {
-        if (true){let memberObj = new Messages({userid: member,messages: 0})
-        await memberObj.save()}
-    });
+    
+
 
 });
 dailyReset
