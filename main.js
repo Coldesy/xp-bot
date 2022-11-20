@@ -46,4 +46,4 @@ client.once('ready', async () => {
 dailyReset
 monthlyReset
 
-client.login('MTA0MzQ4MDUyNjA4ODA2MDk0OQ.GrXvOO.9h9i14145tc-l0TYhYKd6G7KFIJuYSVYpN819s');
+client.login(process.env.TOKEN);
