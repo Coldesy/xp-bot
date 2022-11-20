@@ -1,0 +1,43 @@
+{
+    "name": "xpbot",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "coldy",
+    "license": "ISC",
+    "engines": {
+      "node": ">=16.6.0 "
+    },
+    "dependencies": {
+      "@discordjs/builders": "^0.12.0",
+      "@discordjs/rest": "^0.3.0",
+      "agenda": "^4.2.1",
+      "arrify": "^3.0.0",
+      "canvas": "^2.8.0",
+      "command": "0.0.5",
+      "discord": "^0.8.2",
+      "discord-api-types": "^0.26.1",
+      "discord-minigames": "^1.2.2",
+      "discord.js": "^13.6.0",
+      "dotenv": "^16.0.0",
+      "express": "^4.17.2",
+      "mongoose": "^6.1.8",
+      "node": "^17.4.0",
+      "node-pre-gyp": "^0.17.0",
+      "node-schedule": "^2.1.0",
+      "toad-scheduler": "^1.6.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Coldesy/"
+    },
+    "keywords": [],
+    "bugs": {
+      "url": "https://github.com/Coldesy/"
+    },
+    "homepage": "https://github.com/Coldesy/",
+    "description": ""
+  }
+  
