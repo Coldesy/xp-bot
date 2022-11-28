@@ -1,7 +1,7 @@
 const schedule = require('node-schedule');
 const {Messages} = require('./schema.js');
 
-const dailyReset = schedule.scheduleJob('0 0 0 * *',async (firedTime) => {
+const dailyReset = schedule.scheduleJob('0 0 0 * * *',async (firedTime) => {
 
     await Messages.updateMany(
          { },
@@ -11,7 +11,7 @@ const dailyReset = schedule.scheduleJob('0 0 0 * *',async (firedTime) => {
 });
 module.exports.dailyReset = dailyReset
 
-const monthlyReset = schedule.scheduleJob('0 0 0 0 *',async (firedTime) => {
+const monthlyReset = schedule.scheduleJob('0 0 0 0 * *',async (firedTime) => {
 
     await Messages.updateMany(
          { },
