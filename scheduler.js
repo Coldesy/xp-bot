@@ -20,3 +20,13 @@ const monthlyReset = schedule.scheduleJob('0 0 0 0 * *',async (firedTime) => {
     
 });
 module.exports.monthlyReset = monthlyReset
+
+const Reset = schedule.scheduleJob('0 0 * * SUN',async (firedTime) => {
+
+    await Messages.updateMany(
+         { },
+         {'messages':0}
+      )
+    
+});
+module.exports.Reset = Reset
