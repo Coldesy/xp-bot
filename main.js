@@ -36,16 +36,16 @@ client.on('guildMemberRemove', async (member)=> {
 // When the client is ready, run this code (only once)
 client.once('ready', async () => {
 	console.log('ready');
-    // let guild = await client.guilds.fetch('752105258481877073')
-    // let members = await guild.members.fetch()
-    // let memArr = Array.from(members.values())
-    // let RealMem = memArr.filter((item)=> {
-    //     return !item.user.bot
-    // })
-    // RealMem.forEach(async element => {
-    //     let m = new Messages({userid: element.user.id,messages: 0,dailyMsg:0,monthlyMsg:0,avatar: `https://cdn.discordapp.com/avatars/${element.user.id}/${element.user.avatar}.jpeg`})
-    //     await m.save()
-    // });
+     let guild = await client.guilds.fetch('752105258481877073')
+    let members = await guild.members.fetch()
+    let memArr = Array.from(members.values())
+     let RealMem = memArr.filter((item)=> {
+         return !item.user.bot
+     })
+    RealMem.forEach(async element => {
+    let m = new Messages({userid: element.user.id,messages: 0,dailyMsg:0,monthlyMsg:0,avatar: `https://cdn.discordapp.com/avatars/${element.user.id}/${element.user.avatar}.jpeg`})
+    await m.save()
+     });
     
 
 
